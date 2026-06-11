@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URGENTE: Traficante "Desbaratinado" da Rocinha é procurado em Goiânia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header {
+            background-color: #061d4f;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-main {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .logo-badge {
+            background-color: #cc0000;
+            color: white;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .nav-placeholder {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .sub-header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .main-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .content-area {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .category {
+            color: #cc0000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-bottom: 2px solid #cc0000;
+            padding-bottom: 2px;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 1.2;
+            color: #111;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        .subtitle {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .meta-info {
+            font-size: 12px;
+            color: #888;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            margin-bottom: 25px;
+        }
+        .news-image-mock {
+            background: linear-gradient(135deg, #e0e0e0 0%, #bdc3c7 100%);
+            width: 100%;
+            height: 380px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Esta classe será usada quando você colocar a tag <img> */
+        .news-image-mock img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .news-image-mock svg {
+            width: 80px;
+            height: 80px;
+            fill: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .image-caption {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+            margin-top: -20px;
+            margin-bottom: 25px;
+            padding-left: 5px;
+        }
+        .live-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #cc0000;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            animation: blink 1.5s infinite;
+            z-index: 10;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #061d4f;
+            padding: 15px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .widget {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .widget-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #061d4f;
+            border-bottom: 2px solid #061d4f;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .trending-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 15px;
+        }
+        .trending-item:last-child {
+            border-bottom: none;
+        }
+        .trending-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #cc0000;
+            line-height: 1;
+        }
+        .trending-text {
+            font-size: 14px;
+            font-weight: 600;
+            color: #222;
+            text-decoration: none;
+        }
+        .trending-text:hover {
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-main">DIÁRIO NACIONAL</div>
+            <div class="logo-badge">EXCLUSIVO</div>
+        </div>
+        <div class="nav-placeholder">Segurança • Política • Cidades • Mundo</div>
+    </header>
+
+    <div class="sub-header">
+        Última Atualização: 11 de Junho de 2026 às 14:30
+    </div>
+
+    <div class="main-container">
+        <div class="content-area">
+            <span class="category">Segurança Pública</span>
+            <h1>URGENTE: Traficante da Rocinha conhecido como "Desbaratinado" está foragido em Goiânia</h1>
+            <div class="subtitle">Juliano, apontado como fogueteiro e peça importante no esquema de tráfico de drogas do Rio de Janeiro, rompeu as fronteiras do estado e mobiliza forças de segurança em Goiás.</div>
+            
+            <div class="meta-info">
+                Por <strong>Redação Diário Nacional</strong> — Goiânia, GO<br>
+                <span style="color: #666;">11/06/2026 14h28  • Atualizado há 4 minutos</span>
+            </div>
+
+            <div class="news-image-mock">
+                <div class="live-badge">FOTO DO SUSPEITO</div>
+                
+                <!-- COLOQUE SUA IMAGEM AQUI SUBSTITUINDO O SVG E AS DIVS ABAIXO -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <div style="font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Sem Imagem Oficial Liberada</div>
+                <div style="font-size: 12px; opacity: 0.7; margin-top: 5px;">[Espaço reservado para retrato falado/foto policial]</div>
+                <!-- FIM DO ESPAÇO DA IMAGEM -->
+
+            </div>
+            <div class="image-caption">
+                Forças de segurança divulgarão retrato oficial do suspeito nas próximas horas. A população deve manter vigilância.
+            </div>
+
+            <p>As forças de segurança do Estado de Goiás, em operação conjunta com o setor de inteligência da Polícia Civil do Rio de Janeiro, emitiram um alerta máximo nesta quinta-feira. O alvo é <strong>Juliano</strong>, criminoso de alta periculosidade que atende no submundo pelo vulgo de <strong>"Desbaratinado"</strong>.</p>
+
+            <p>Nascido e criado na comunidade da Rocinha, na Zona Sul do Rio de Janeiro, Juliano iniciou sua extensa ficha criminal como "fogueteiro" — função estratégica na qual era responsável por acionar fogos de artifício para alertar os líderes do tráfico sobre a incursão de viaturas do BOPE e da Polícia Militar. Investigações recentes apontam que ele ascendeu na hierarquia, envolvendo-se diretamente com a logística de distribuição de entorpecentes.</p>
+
+            <div class="highlight-box">
+                "O cerco está montado. A integração entre as polícias estaduais é absoluta e a captura desse indivíduo é questão de tempo. Ele tentou buscar refúgio no Centro-Oeste, mas não passará despercebido em Goiás", declarou um porta-voz da Secretaria de Segurança Pública de Goiás (SSP-GO).
+            </div>
+
+            <p>Informações exclusivas obtidas pela reportagem do <strong>Diário Nacional</strong> revelam que o suspeito abandonou o Rio de Janeiro após uma operação policial na Rocinha que desarticulou parte de sua facção. Buscando uma base de apoio longe dos radares fluminenses, Juliano deslocou-se de forma clandestina para Goiânia, onde suspeita-se que estaria tentando estabelecer novas rotas comerciais ilícitas.</p>
+
+            <p>As autoridades alertam a população goianiense: o suspeito é considerado perigoso. A orientação é que civis não tentem qualquer tipo de abordagem caso identifiquem alguém com as características de Juliano. Qualquer informação sobre o paradeiro de "Desbaratinado" deve ser repassada imediatamente através do número <strong>190</strong> ou do <strong>Disque-Denúncia local</strong>, com garantia de sigilo absoluto.</p>
+
+            <p>A "Operação Barreira", que vigia as rodovias e entradas estratégicas de Goiânia e de cidades vizinhas como Aparecida de Goiânia, continua em vigor por tempo indeterminado.</p>
+        </div>
+
+        <div class="sidebar">
+            <div class="widget">
+                <div class="widget-title">Últimas do Tráfico</div>
+                
+                <div class="trending-item">
+                    <div class="trending-number">1</div>
+                    <a href="#" class="trending-text">Operação na Rocinha apreende armamento pesado e desarticula laboratório</a>
+                </div>
+                
+                <div class="trending-item">
+                    <div class="trending-number">2</div>
+                    <a href="#" class="trending-text">SSP-GO anuncia reforço no policiamento de divisas rodoviárias</a>
+                </div>
+                
+                <div class="trending-item">
+                    <div class="trending-number">3</div>
+                    <a href="#" class="trending-text">Disque-Denúncia registra aumento de 40% em ligações anônimas em Goiás</a>
+                </div>
+            </div>
+            
+            <div class="widget" style="background-color: #061d4f; color: white; text-align: center; padding: 30px 20px;">
+                <h3 style="margin: 0 0 10px 0; font-size: 18px;">DISQUE-DENÚNCIA</h3>
+                <p style="font-size: 13px; color: #ddd; margin: 0;">Viu algo suspeito? Ligue gratuitamente. Garantimos o anonimato absoluto e a sua segurança.</p>
+                <h2 style="color: #cc0000; margin: 15px 0 0 0;">181</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

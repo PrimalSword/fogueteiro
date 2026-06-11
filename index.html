@@ -107,8 +107,9 @@
             padding: 10px 0;
             margin-bottom: 25px;
         }
+        /* CORREÇÃO DO CORTES E POSICIONAMENTO DA PRIMEIRA IMAGEM */
         .news-image-mock {
-            background: linear-gradient(135deg, #e0e0e0 0%, #bdc3c7 100%);
+            background: none; /* Remove o gradiente de espaço reservado */
             width: 100%;
             height: auto; /* Altura automática para não cortar */
             min-height: 300px; /* Garante que tenha um tamanho mínimo */
@@ -153,26 +154,25 @@
             margin-bottom: 25px;
             padding-left: 5px;
         }
-        .secondary-image-block {
+        /* ESTILOS PARA A SEGUNDA FOTO DE JORNAL NO MEIO DO TEXTO */
+        .article-image {
             margin: 30px 0;
-            text-align: center;
+            width: 100%;
         }
-        .secondary-image-block img {
-            max-width: 100%;
-            height: auto;
+        .article-image img {
+            width: 100%;
             border-radius: 6px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            object-fit: contain;
         }
-        .secondary-caption {
+        .article-image figcaption {
             font-size: 13px;
             color: #555;
             font-style: italic;
             margin-top: 10px;
-            padding: 8px 10px;
-            background-color: #f9f9f9;
+            padding-left: 10px;
             border-left: 4px solid #cc0000;
-            border-radius: 0 4px 4px 0;
+            background-color: #f9f9f9;
+            padding: 8px 10px;
         }
         p {
             font-size: 16px;
@@ -245,7 +245,7 @@
     </header>
 
     <div class="sub-header">
-        Última Atualização: 11 de Junho de 2026 às 14:30
+        Última Atualização: 11 de Junho de 2026 às 15:15
     </div>
 
     <div class="main-container">
@@ -267,26 +267,28 @@
                 Forças de segurança divulgaram o retrato do suspeito. A população deve manter vigilância e denunciar anonimamente.
             </div>
 
-            <p>As forças de segurança do Estado de Goiás, em operação conjunta com o setor de inteligência da Polícia Civil do Rio de Janeiro, emitiram um alerta máximo nesta quinta-feira. O alvo é <strong>Juliano</strong>, criminoso de alta periculosidade que atende no submundo pelo vulgo de <strong>"Desbaratinado"</strong>.</p>
+            <p>As forces de segurança do Estado de Goiás, em operação conjunta com o setor de inteligência da Polícia Civil do Rio de Janeiro, emitiram um alerta máximo nesta quinta-feira. O alvo é <strong>Juliano</strong>, criminoso de alta periculosidade que atende no submundo pelo vulgo de <strong>"Desbaratinado"</strong>.</p>
 
-            <p>Nascido e criado na comunidade da Rocinha, na Zona Sul do Rio de Janeiro, Juliano iniciou sua extensa ficha criminal como "fogueteiro" — função estratégica na qual era responsável por acionar fogos de artifício para alertar os líderes do tráfico sobre a incursão de viaturas do BOPE e da Polícia Militar. Investigações recentes apontam que ele ascendeu na hierarquia, envolvendo-se diretamente com a logística de distribuição de entorpecentes.</p>
+            <p>Nascido e criado na comunidade da Rocinha, na Zona Sul do Rio de Janeiro, Juliano iniciou sua extensa ficha criminal como "fogueteiro" — função estratégica na qual era responsável por acionar fogos de artifício para alertar os líderes do tráfico sobre a incursão de viaturas do BOPE e da Polícia Militar. Investigações recentes apontam que ele ascendeu na hierarchy, envolvendo-se diretamente com a logística de distribuição de entorpecentes.</p>
 
-            <p>A polícia confirmou que o suspeito foi visto pela última vez na manhã desta quinta-feira, em Goiânia. De acordo com informações de inteligência, Juliano estava aguardando a chegada de um novo carregamento de entorpecentes em um local pré-determinado, o que sugere a continuidade de suas atividades ilícitas na região. Uma imagem obtida de uma câmera de monitoramento mostra Juliano no local.</p>
+            <h2 style="font-size: 22px; color: #061d4f; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 30px;">Último Avistamento e Carregamento</h2>
 
-            <div class="secondary-image-block">
-                <img src="desbaratinado.jpeg" alt="Último flagrante de Juliano aguardando carregamento de drogas em Goiânia">
-                <div class="secondary-caption"><strong>ÚLTIMO FLAGRANTE:</strong> Câmera de segurança registra Juliano aguardando carregamento de drogas em Goiânia.</div>
-            </div>
+            <p>A situação ganhou novos e urgentes contornos na manhã de hoje. Câmeras de segurança registraram o que seria a última aparição confirmada de "Desbaratinado" em solo goiano. Segundo fontes exclusivas ligadas à investigação, o traficante foi flagrado enquanto aguardava a chegada de um grande carregamento de drogas.</p>
+
+            <figure class="article-image">
+                <img src="desbaratinado.jpeg" alt="Juliano aguardando carregamento de drogas">
+                <figcaption><strong>ÚLTIMO FLAGRANTE:</strong> Câmera de segurança registra Juliano aguardando carregamento de drogas em Goiânia.</figcaption>
+            </figure>
+
+            <p>As investigações apontam que a carga recebida seria rapidamente pulverizada e distribuída por toda a região metropolitana, visando abastecer rotas comerciais ilícitas e fortalecer o caixa da facção, incluindo pontos estratégicos de escoamento no município de Aparecida de Goiânia.</p>
 
             <div class="highlight-box">
-                "O cerco está montado. A integração entre as polícias estaduais é absoluta e a captura desse indivíduo é questão de tempo. Ele tentou buscar refúgio no Centro-Oeste, mas não passará despercebido em Goiás", declarou um porta-voz da Secretaria de Segurança Pública de Goiás (SSP-GO).
+                "O cerco está montado. A integração entre as polícias estaduais é absoluta e a captura desse indivíduo é questão de tempo. Ele tentou buscar refúgio no Centro-Oeste, mas não passará despercebido em Goiás", declarou um porta-voz da Secretaria de Segurança Pública (SSP-GO).
             </div>
 
-            <p>Informações exclusivas obtidas pela reportagem do <strong>Diário Nacional</strong> revelam que o suspeito abandonou o Rio de Janeiro após uma operação policial na Rocinha que desarticulou parte de sua facção. Buscando uma base de apoio longe dos radares fluminenses, Juliano deslocou-se de forma clandestina para Goiânia, onde suspeita-se que estaria tentando estabelecer novas rotas comerciais ilícitas.</p>
+            <p>As autoridades alertam a população: o suspeito é considerado perigoso. A orientação é que civis não tentem qualquer tipo de abordagem caso identifiquem alguém com as características de Juliano. Qualquer informação sobre o paradeiro de "Desbaratinado" deve ser repassada imediatamente através do número <strong>190</strong> ou do <strong>Disque-Denúncia (181)</strong>, com garantia de sigilo absoluto.</p>
 
-            <p>As autoridades alertam a população goianiense: o suspeito é considerado perigoso. A orientação é que civis não tentem qualquer tipo de abordagem caso identifiquem alguém com as características de Juliano. Qualquer informação sobre o paradeiro de "Desbaratinado" deve ser repassada imediatamente através do número <strong>190</strong> ou do <strong>Disque-Denúncia local</strong>, com garantia de sigilo absoluto.</p>
-
-            <p>A "Operação Barreira", que vigia as rodovias e entradas estratégicas de Goiânia e de cidades vizinhas como Aparecida de Goiânia, continua em vigor por tempo indeterminado.</p>
+            <p>A "Operação Barreira", que vigia as rodovias e entradas estratégicas da capital goiana e entorno, continua em vigor por tempo indeterminado.</p>
         </div>
 
         <div class="sidebar">
